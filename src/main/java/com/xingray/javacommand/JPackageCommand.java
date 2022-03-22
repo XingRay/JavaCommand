@@ -25,6 +25,9 @@ public class JPackageCommand {
     private Boolean winShortcut;
     private String installDir;
     private String resourceDir;
+    private String input;
+    private String mainJar;
+    private String mainClass;
     private String module;
     private String addModules;
     private List<String> modulePath;
@@ -165,6 +168,30 @@ public class JPackageCommand {
         this.resourceDir = resourceDir;
     }
 
+    public String getInput() {
+        return input;
+    }
+
+    public void setInput(String input) {
+        this.input = input;
+    }
+
+    public String getMainJar() {
+        return mainJar;
+    }
+
+    public void setMainJar(String mainJar) {
+        this.mainJar = mainJar;
+    }
+
+    public String getMainClass() {
+        return mainClass;
+    }
+
+    public void setMainClass(String mainClass) {
+        this.mainClass = mainClass;
+    }
+
     public List<String> getModulePath() {
         return modulePath;
     }
@@ -191,6 +218,9 @@ public class JPackageCommand {
                 ", winShortcut=" + winShortcut +
                 ", installDir='" + installDir + '\'' +
                 ", resourceDir='" + resourceDir + '\'' +
+                ", input='" + input + '\'' +
+                ", mainJar='" + mainJar + '\'' +
+                ", mainClass='" + mainClass + '\'' +
                 ", module='" + module + '\'' +
                 ", addModules='" + addModules + '\'' +
                 ", modulePath=" + modulePath +
